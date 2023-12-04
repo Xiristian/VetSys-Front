@@ -11,7 +11,6 @@ export const fetchTutorsPage = (page = 1) => {
 }
 
 export const fetchTutorsFilterPage = (filter = 1) => {
-    console.log(filter);
     return axios.get(`${API_URL}/tutor${filter}`);
 }
 

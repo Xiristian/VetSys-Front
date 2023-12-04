@@ -4,7 +4,6 @@ import { fetchTutors, createTutor, updateTutor, deleteTutor, getTutorById, fetch
 
 import { Button, Modal } from 'react-bootstrap';
 import Pagination from './Pagination';
-import { convertBackendDateToFrontend } from './Utils';
 
 function TutorPage() {
     const [showModal, setShowModal] = useState(false);
@@ -77,7 +76,7 @@ function TutorPage() {
 
     function handleFecthList() {
         if (nomeFilter) {
-            const filterValue = `descricao%2Blike%2B${encodeURIComponent(nomeFilter)}`;
+            const filterValue = `nome%2Blike%2B${encodeURIComponent(nomeFilter)}`;
             fetchTutorsFilterPage(`?filter=${filterValue}`).then(response => {
                 setTutors(response.data.content);
                 setTotalItens(response.data.totalElements);
@@ -99,7 +98,7 @@ function TutorPage() {
 
     function handleFecthEspecialFilterList() {
         if (enderecoFilter) {
-            const filterValue = `endereco%2Bequal%2B${encodeURIComponent(enderecoFilter)}`;
+            const filterValue = `endereco%2Blike%2B${encodeURIComponent(enderecoFilter)}`;
             fetchTutorsFilterPage(`?filter=${filterValue}`).then(response => {
                 setTutors(response.data.content);
                 setTotalItens(response.data.totalElements);
@@ -221,7 +220,7 @@ function TutorPage() {
                 </div>
 
                 <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Filtrar por descrição" aria-describedby="button-addon2" value={nomeFilter}
+                    <input type="text" className="form-control" placeholder="Filtrar por nome" aria-describedby="button-addon2" value={nomeFilter}
                         onChange={e => setNomeFilter(e.target.value)} />
                     <button className="btn btn-outline-secondary" type="button" id="button-addon2" onClick={() => setNomeFilter('')}>Limpar</button>
                     <button className="btn btn-outline-secondary" type="button" id="button-addon2" onClick={() => handleFecthList()}>Buscar</button>
@@ -235,6 +234,7 @@ function TutorPage() {
                         <th>Nome</th>
                         <th>Telefone</th>
                         <th>CPF</th>
+                        <th>Endereço</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -245,6 +245,7 @@ function TutorPage() {
                             <td>{tutor.nome}</td>
                             <td>{tutor.telefone}</td>
                             <td>{tutor.cpf}</td>
+                            <td>{tutor.endereco}</td>
                             <td>
                                 <button className="btn btn-warning btn-sm me-2" onClick={() => handleEditTutor(tutor)}>Alterar</button>
                                 <button className="btn btn-danger btn-sm" onClick={() => handleDelete(tutor.id)}>Deletar</button>

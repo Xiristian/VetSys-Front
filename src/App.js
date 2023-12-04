@@ -5,6 +5,8 @@ import ProductPage from './components/ProductPage';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TutorPage from './components/TutorPage';
+import SpeciesPage from './components/SpeciesPage';
+import AnimalPage from './components/AnimalPage';
 
 function App() {
     return (
@@ -15,6 +17,8 @@ function App() {
                     <Route path="/" element={<div>/* Seu conteúdo principal aqui */</div>} />
                     <Route path="/produtos" element={<ProductPage />} />
                     <Route path="/tutor" element={<TutorPage />} />
+                    <Route path="/especie" element={<SpeciesPage />} />
+                    <Route path='/animal' element={<AnimalPage />} />
                 </Routes>
             </div>
         </Router>

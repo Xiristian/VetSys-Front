@@ -16,6 +16,12 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/tutor">Tutores</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/especie">Espécies</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/animal">Animais</NavLink>
+                        </li>
                         {/* Outros links aqui */}
                     </ul>
                 </div>
