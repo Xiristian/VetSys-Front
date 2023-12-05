@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div className="container-fluid">
-                <NavLink className="navbar-brand" to="/">Satc eCommerce</NavLink>
+                <NavLink className="navbar-brand" to="/">VetSys</NavLink>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
