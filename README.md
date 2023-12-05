@@ -1,6 +1,6 @@
-# Aplicação Exemplo - SatcLoja
+# VetSys
 
-São os CRUDs para as aplicação [SatcLoja -BackEnd](https://github.com/brunokurzawe/satc-loja).
+São os CRUDs para as aplicação [VetSys -BackEnd](https://github.com/Xiristian/VetSys).
 
 ## Scrits
 
