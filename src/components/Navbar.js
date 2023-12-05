@@ -22,6 +22,9 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/animal">Animais</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/atendimento">Atendimento</NavLink>
+                        </li>
                         {/* Outros links aqui */}
                     </ul>
                 </div>

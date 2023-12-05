@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TutorPage from './components/TutorPage';
 import SpeciesPage from './components/SpeciesPage';
 import AnimalPage from './components/AnimalPage';
+import AtendimentoPage from './components/AtendimentoPage';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/tutor" element={<TutorPage />} />
                     <Route path="/especie" element={<SpeciesPage />} />
                     <Route path='/animal' element={<AnimalPage />} />
+                    <Route path='/atendimento' element={<AtendimentoPage />} />
                 </Routes>
             </div>
         </Router>

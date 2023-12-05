@@ -41,7 +41,6 @@ function AnimalPage() {
     useEffect(() => {
         fetchAnimals()
             .then(response => {
-                console.log('Animais:', response.data.content);
                 setAllAnimal(response.data.content);
                 setTotalItens(response.data.totalElements);
             })
