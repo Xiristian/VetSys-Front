@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Navbar from './components/Navbar';
-import ProductPage from './components/ProductPage';
 import ProcedimentoPage from './components/ProcedimentoPage';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,6 +11,7 @@ import AtendimentoPage from './components/AtendimentoPage';
 import EmpregadoPage from './components/EmpregadoPage';
 import MaterialPage from './components/MaterialPage';
 import RemedioPage from './components/RemedioPage';
+import InternacaoPage from './components/InternacaoPage';
 
 function App() {
     return (
@@ -21,7 +21,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<div>/* Seu conteúdo principal aqui */</div>} />
                     <Route path="/procedimento" element={<ProcedimentoPage />} />
-                    <Route path="/produtos" element={<ProductPage />} />
+                    <Route path="/internacao" element={<InternacaoPage />} />
                     <Route path="/material" element={<MaterialPage />} />
                     <Route path='/remedio' element={<RemedioPage />} />
                     <Route path="/tutor" element={<TutorPage />} />
