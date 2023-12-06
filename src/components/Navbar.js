@@ -11,10 +11,16 @@ function Navbar() {
                             <NavLink className="nav-link" to="/" exact>Home</NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink className="nav-link" to="/procedimento">Procedimentos</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/produtos">Produtos</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/tutor">Tutores</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/empregado">Empregados</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/especie">Espécies</NavLink>
