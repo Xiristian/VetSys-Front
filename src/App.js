@@ -10,6 +10,8 @@ import SpeciesPage from './components/SpeciesPage';
 import AnimalPage from './components/AnimalPage';
 import AtendimentoPage from './components/AtendimentoPage';
 import EmpregadoPage from './components/EmpregadoPage';
+import MaterialPage from './components/MaterialPage';
+import RemedioPage from './components/RemedioPage';
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                     <Route path="/" element={<div>/* Seu conteúdo principal aqui */</div>} />
                     <Route path="/procedimento" element={<ProcedimentoPage />} />
                     <Route path="/produtos" element={<ProductPage />} />
+                    <Route path="/material" element={<MaterialPage />} />
+                    <Route path='/remedio' element={<RemedioPage />} />
                     <Route path="/tutor" element={<TutorPage />} />
                     <Route path="/empregado" element={<EmpregadoPage />} />
                     <Route path="/especie" element={<SpeciesPage />} />

@@ -17,6 +17,12 @@ function Navbar() {
                             <NavLink className="nav-link" to="/produtos">Produtos</NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink className="nav-link" to="/material">Materiais</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/remedio">Remédios</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/tutor">Tutores</NavLink>
                         </li>
                         <li className="nav-item">
